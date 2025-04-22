@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-def parser_news(html):
+def parser_latest_news(html):
     soup = BeautifulSoup(html, 'html.parser')
     articles = []
 

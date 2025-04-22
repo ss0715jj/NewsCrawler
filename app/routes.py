@@ -4,7 +4,7 @@ from app.service import fetch_latest_news
 bp = Blueprint('api', __name__)
 
 
-@bp.route('/api/latest_news', methods=['GET'])
+@bp.route('/api/news/latest', methods=['GET'])
 def get_latest_news():
     try:
         items = fetch_latest_news()
